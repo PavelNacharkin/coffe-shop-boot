@@ -13,7 +13,8 @@ public class CoffeeHouseImpl implements CoffeeHouse {
     public void welcomeTheUserTakeTheMoneyAndBuyCoffee() {
         System.out.println("Приветсвую тебя путник!");
         System.out.println("Не зря ты забрел в лучшую кофейню на Диком Западе");
-        System.out.println("Вот наш ассортимент:  " + "\n" + " - Irish Raff --- 59.9$" + "\n" + " - Almond Latte --- 75.9$"
+        System.out.println("Вот наш ассортимент:  " + "\n" + " - Irish Raff --- 59.9$" + "\n" + " - Almond Latte --- " +
+                "75.9$"
                 + "\n" + " - Branded coffee --- 999.99$");
         System.out.println("Сначала деньги, потом кофе и лучше без резких движений дружище!");
         double price = Double.parseDouble(ioService.input());
