@@ -43,21 +43,21 @@ public class CoffeeHouseImplTest {
     private CoffeeHouse coffeeHouse;
 
 
-    @DisplayName("корректный метод Привет-программист")
+    @DisplayName("корректный метод Добро пожаловать ")
     @Test
     public void shouldHaveCorrectWelcomeTheUserTakeTheMoneyAndBuyCoffee(){
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         coffeeHouse.welcomeTheUserTakeTheMoneyAndBuyCoffee();
-        Assertions.assertEquals("Приветсвую тебя путник!\r\n" +
-                "Не зря ты забрел в лучшую кофейню на Диком Западе\r\n" +
-                "Вот наш ассортимент:  \r\n" +
-                " - Irish Raff --- 59.9$\r\n" +
-                " - Almond Latte --- 75.9$\r\n" +
-                " - Branded coffee --- 999.99$\r\n" +
-                "Сначала деньги, потом кофе и лучше без резких движений дружище!\r\n" +
-                "Твой Whiskey with coffee готов! Наслаждайся\r\n" +
-                "Буду рад увидеть тебя снова\r\n",out.toString());
+        Assertions.assertEquals("Приветсвую тебя путник!\n" +
+                "Не зря ты забрел в лучшую кофейню на Диком Западе\n" +
+                "Вот наш ассортимент:  \n" +
+                " - Irish Raff --- 59.9$\n" +
+                " - Almond Latte --- 75.9$\n" +
+                " - Branded coffee --- 999.99$\n" +
+                "Сначала деньги, потом кофе и лучше без резких движений дружище!\n" +
+                "Твой Whiskey with coffee готов! Наслаждайся\n" +
+                "Буду рад увидеть тебя снова\n",out.toString());
 
     }
 }
